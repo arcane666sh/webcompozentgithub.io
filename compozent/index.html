@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Management App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Task Management App</h1>
+      <p>Track your tasks and earn badges as you progress!</p>
+    </header>
+
+    <!-- Task Input Section -->
+    <div class="task-input">
+      <input type="text" id="taskInput" placeholder="Enter a new task" />
+      <button id="addTaskBtn">Add Task</button>
+    </div>
+
+    <!-- Task List Section -->
+    <section class="tasks-section">
+      <h2>Tasks</h2>
+      <ul id="taskList"></ul>
+    </section>
+
+    <!-- Completed Tasks Section -->
+    <section class="completed-tasks-section">
+      <h2>Completed Tasks</h2>
+      <ul id="completedList"></ul>
+    </section>
+
+    <!-- Badges and Progress Section -->
+    <section class="badges-progress-section">
+      <h2>Badges Earned</h2>
+      <div id="badges">
+        <p>No badges yet!</p>
+      </div>
+      <h2>Progress</h2>
+      <div class="progress-bar-container">
+        <div id="progressBar" class="progress-bar"></div>
+      </div>
+    </section>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

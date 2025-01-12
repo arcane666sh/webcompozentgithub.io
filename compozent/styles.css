@@ -1,0 +1,149 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #dbeafe, #e2e8f0);
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+header {
+  text-align: center;
+  color: #1e3a8a;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1rem;
+  margin-top: -10px;
+}
+
+/* Task Input */
+.task-input {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.task-input input {
+  flex: 1;
+  padding: 10px;
+  font-size: 1rem;
+  border: 2px solid #1e3a8a;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.task-input button {
+  padding: 10px 20px;
+  background: #1e3a8a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.task-input button:hover {
+  background: #2563eb;
+}
+
+/* Sections */
+section {
+  margin: 20px 0;
+  padding: 20px;
+  background: #f1f5f9;
+  border-radius: 10px;
+}
+
+section h2 {
+  color: #1e3a8a;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+
+li span {
+  flex: 1;
+  word-wrap: break-word;
+}
+
+li button {
+  margin-left: 5px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+li button.complete {
+  background: #22c55e;
+  color: white;
+}
+
+li button.delete {
+  background: #ef4444;
+  color: white;
+}
+
+li button:hover {
+  opacity: 0.8;
+}
+
+/* Badges Section */
+.badges-progress-section {
+  text-align: center;
+}
+
+.badge {
+  display: inline-block;
+  margin: 5px;
+  padding: 10px;
+  background: #e5e7eb;
+  color: #111827;
+  border-radius: 50%;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+/* Progress Bar */
+.progress-bar-container {
+  margin: 20px auto;
+  width: 100%;
+  background: #e5e7eb;
+  height: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background: #1e3a8a;
+  width: 0;
+  transition: width 0.3s ease-in-out;
+}
