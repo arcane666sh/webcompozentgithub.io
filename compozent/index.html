@@ -3,20 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Task Management App</title>
+  <title>Enhanced Task Management App</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="container">
     <header>
-      <h1>Task Management App</h1>
-      <p>Track your tasks and earn badges as you progress!</p>
+      <h1>Enhanced Task Management App</h1>
+      <p>Track tasks, set priorities, and earn badges!</p>
     </header>
 
     <!-- Task Input Section -->
     <div class="task-input">
-      <input type="text" id="taskInput" placeholder="Enter a new task" />
+      <input type="text" id="taskInput" placeholder="Enter a new task">
+      <select id="categorySelect">
+        <option value="Work">Work</option>
+        <option value="Personal">Personal</option>
+        <option value="Urgent">Urgent</option>
+      </select>
+      <select id="prioritySelect">
+        <option value="High">High</option>
+        <option value="Medium">Medium</option>
+        <option value="Low">Low</option>
+      </select>
+      <input type="date" id="dueDate">
       <button id="addTaskBtn">Add Task</button>
+    </div>
+
+    <!-- Search and Sort Section -->
+    <div class="search-sort">
+      <input type="text" id="searchBar" placeholder="Search tasks">
+      <button id="sortPriorityBtn">Sort by Priority</button>
+      <button id="resetTasksBtn">Reset All Tasks</button>
     </div>
 
     <!-- Task List Section -->
@@ -42,6 +60,11 @@
         <div id="progressBar" class="progress-bar"></div>
       </div>
     </section>
+
+    <!-- Theme Toggle -->
+    <div class="theme-toggle">
+      <button id="toggleThemeBtn">Toggle Theme</button>
+    </div>
   </div>
   <script src="script.js"></script>
 </body>
